@@ -11,17 +11,17 @@
                 <legend>Add User</legend>
                 <div>
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="first_name">
+                    <input type="text" id="firstName" name="first_name" required>
                 </div>
 
                 <div>
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="last_name">
+                    <input type="text" id="lastName" name="last_name" required>
                 </div>
 
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email_address">
+                    <input type="email" id="email" name="email_address" required>
                 </div>
 
                 <div>
@@ -39,7 +39,6 @@
                         <input type="radio" id="css" name="fav_prog">
                         <label for="css">CSS</label>
                     </div>
-
                     <div>
                         <input type="radio" id="html" name="fav_prog">
                         <label for="html">HTML</label>
@@ -50,15 +49,29 @@
                         <label for="javascript">JavaScript</label>
                     </div>
                 </div>
-
+                <br>
                 <div>
                     <label for="comments">Comments:</label>
+                    <br>
                     <textarea id="comments" name="comments"></textarea>
                 </div>
-
+                <br>
                 <div>
                     <label for="today">Current date:</label>
                     <input type="date" id="today" name="today">
+                </div>
+                <br>
+                <div>
+                    <label for="newsletter">Sign up for newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <br>
+                    <label for="TOS">Agree to terms and conditions</label>
+                    <input type="checkbox" id="TOS" name="TOS" required>
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Submit</button>
                 </div>
             </fieldset>
         </form>
